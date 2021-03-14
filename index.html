@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Wan-Seon Jang</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Comfortaa:700" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div id="loading">
+        <div id="spinner"></div>
+    </div>
+    <div id="particles-js"></div>
+    <div id="box">
+        <div class="box1 onlywide animated bounceOutLeft" style="animation-delay:1.7s;"></div>
+        <div class="box2 onlywide animated bounceOutLeft" style="animation-delay:1.8s;"></div>
+        <div class="box2 onlywide animated bounceOutLeft" style="animation-delay:1.9s;"></div>
+        <div class="box2 animated bounceOutRight" style="animation-delay:1.9s;"></div>
+        <div class="box2 onlywide animated bounceOutRight" style="animation-delay:1.8s;"></div>
+        <div class="box2 onlywide animated bounceOutRight" style="animation-delay:1.7s;"></div>
+    </div>
+    <a id="about" onclick="showabout()" class="animated fadeIn" style="animation-delay:2.2s;">about</a>
+    <a id="work" onclick="showwork()" class="animated fadeIn" style="animation-delay:2.2s;">work</a>
+    <a id="contact" onclick="showcontact()" class="animated fadeIn" style="animation-delay:2.2s;">contact</a>
+    <div id="middle" class="animated slideInDown" style="animation-delay:2.0s;">
+        <div class="main-img">
+            <div class="main-imgWrap">
+                <p></p>
+            </div>
+        </div>
+        <!-- <div class="main-link">
+            <p><a href="#">github</a></p>
+            <p><a href="#">project blog</a></p>
+        </div> -->
+        <h2>designers & developers / Web producer / Best Thinker!</h2>
+        <div id="menu">
+            <a onclick="showabout()">about</a>
+            <a onclick="showwork()">work</a>
+            <a onclick="showcontact()">contact</a>
+        </div>
+        <!-- <table>
+                <tr>
+                    <td class="animated zoomIn" style="animation-delay:2.2s;"><a class="social"><i class="fab fa-github"></i></a></td>
+                    <td class="animated zoomIn" style="animation-delay:2.4s;"><a class="social"><i class="fab fa-blogger"></i></a></td>
+                    <td class="animated zoomIn" style="animation-delay:2.6s;"><a class="social"><i class="fab fa-instagram"></i></a></td>
+                    <td class="animated zoomIn" style="animation-delay:2.8s;"><a class="social"><i class="fab fa-dribbble"></i></a></td>
+                </tr>
+        </table> -->
+    </div>
+    <div id="work_container" class="container">
+        <div onclick="closework()"><i class="fas fa-angle-right"></i></div>
+        <h1>Work.</h1>
+        <section>
+            <h2>경력사항 총 36개월 (만 3년)</h2>
+            <p>
+                프로젝트 구축과 함께하는 서비스의 탄생! <br />
+                2017년 12월 4일에 입사하여, SI 업체인 ezssoft에서 PM부터 기획, 디자인, 퍼블리싱까지 멀티업무의 경험을 보유하고 있습니다. <br />
+                다양한 프로젝트 경험으로 홈페이지 구축부터 쇼핑몰, 하이브리드 웹/앱, 플랫폼, ERP수정 및 모바일 어플 등 각 브라우저를 고려한 구축작업을 진행하였습니다.
+            <div class="project-list">
+                <p class="fsp">모든 프로젝트는 반응형으로 제작되었으며, <a href="https://chapchap992.github.io/">프로젝트 저장소</a>를 통해 확인하세요.</p>
+                <div class="project-treeWrap">
+                    <h3>Project Timeline</h3>
+                    <div class="project-tree-dot">
+                        <ul>
+                            <li>
+                               <div>
+                                    <h4>2020</h4>
+                                    <p>경원알미늄 건축 플랫폼 '아키오션' 기획안 제작</p>
+                                    <p>KRX 그린케미칼 홈페이지 리뉴얼</p>
+                                    <p>KRX 그린케미칼 채용 홈페이지 구축 및 면접평가 프로세스 제작</p>
+                                    <p>외 6개 구축작업</p>
+                               </div>
+                            </li>
+                            <li>
+                                <div>
+                                     <h4>2019</h4>
+                                     <p>농업중개사 B2B 계약재배 플랫폼 구축</p>
+                                     <p>(주)한우리푸드시스템 홈페이지 리뉴얼 및 대리점 오더관리 구축</p>
+                                     <p>KRX 그린케미칼 채용 홈페이지 구축 및 면접평가 프로세스 제작</p>
+                                     <p>외 9개 구축작업</p>
+                                </div>
+                             </li>
+                             <li>
+                                <div>
+                                     <h4>2017 - 2018</h4>
+                                     <p>고려금속앙카 홈페이지 구축</p>
+                                     <p>VR 적성검사 프레디저 코리아 4개국어 구축 </p>
+                                     <p>씨티코리아 파렉스, 오스트랄브릭스 홈페이지 리뉴얼</p>
+                                     <p>외 12개 구축작업 및 유지보수 병행</p>
+                                </div>
+                             </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!-- <button class="btn_one">button 1</button> -->
+            <button class="btn_two" onclick="location.href = 'https://chapchap992.github.io/';">Go to Project Storage</button>
+        </section>
+    </div>
+    <div id="about_container" class="container about_color">
+            <div onclick="closeabout()"><i class="fas fa-angle-left"></i></div>
+            <h1>about.</h1>
+            <section>
+                <h2>장완선 <small>(WanSeon Jang)</small></h2>
+                <div class="noto">
+                    <h4>
+                        designers & developers
+                    </h4>
+                    <div class="noto">
+                        <p>
+                            대학교를 졸업하고 "내가 앞으로 가고자 하는 길과 방향이 무엇인가?" 라는 고민과 물음을 바탕으로 직업을 탐색하던 중 무작정 고용센터로 들어갔던 날이 생각납니다.<br />
+                            저의 본 전공을 뒤로 한 채 선택한 이 길은, 앞으로 어떤 방향이 될 지 아무것도 모르던 상태였습니다.  불안한 시기를 거쳐 에이전시에서 일을 하게 되면서 많은 경험을 하게 되어 지금의 제가 되었습니다. <br />
+                            리스크(Risk)는 "지도를 가지고 있지 않은 배가 항해함"를 뜻하는 아랍어에 뿌리를 두고 있다고 합니다. <br /> 
+                            지도 없는 항해, 이제는 저만의 경험을 바탕으로 더 넓은 길로 항해하려고 합니다.
+                        </p>
+                    <div>
+                </div>
+            </section>
+            <section>
+                <h2>skills</h2>
+                <p>
+                    항상 탐구 중입니다.
+                </p>
+                <div id="used">
+                    <div><i class="fas fa-circle"></i>&nbsp;HTML5</div>
+                    <div><i class="fas fa-circle"></i>&nbsp;CSS3</div>
+                    <div><i class="fas fa-circle"></i>&nbsp;Javascript</div>
+                    <div><i class="fas fa-circle"></i>&nbsp;Photoshop</div>
+                    <div><i class="fas fa-circle"></i>&nbsp;Illustrator</div>
+                </div>
+            </section>
+        </div>
+          <div id="contact_container" class="container contact_color">
+            <div onclick="closecontact()"><i class="fas fa-angle-down"></i></div>
+            <h1>contact.</h1>
+            <section>
+                <h2>contact me</h2>
+                <p>
+                    <form id="gform" method="POST" action="https://script.google.com/macros/s/AKfycbyu7PY6t3Xl4TsZUxQtAmrW_ZLCopoBb_8O8Kc_/exec">
+                        <input type="text" placeholder="name" required>
+                        <input type="email" placeholder="email" required><br>
+                        <textarea placeholder="your message" required rows="5"></textarea><br>
+                        <button class="btn_one">send</button>
+                    </form> 
+                </p>
+            </section>
+        </div>
+        <div id="footer">
+            made on earth by a human <br> <a href="https://github.com/chapchap992">chapchap992</a>
+        </div>
+    <script src="index.js" type="text/javascript"></script>
+    <script src="particles.js"></script>
+    <script src="app.js"></script>
+</html>
