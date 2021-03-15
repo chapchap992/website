@@ -136,21 +136,44 @@
                 </div>
             </section>
         </div>
-          <div id="contact_container" class="container contact_color">
+        <div id="contact_container" class="container contact_color">
             <div onclick="closecontact()"><i class="fas fa-angle-down"></i></div>
             <h1>contact.</h1>
             <section>
                 <h2>contact me</h2>
                 <p>
-                    <form id="gform" method="POST" data-email="example@email.net" action="https://script.google.com/macros/s/AKfycbxBU5YU_iREh-u7QFKR4XLF2_VlieNXKynxheNucPOHuSmA0Wk/exec">
-                        <input type="text" placeholder="name" name="name">
-                        <input type="email" placeholder="email" name="email"><br>
-                        <textarea placeholder="your message" rows="5" name="message"></textarea><br>
-                        <button class="btn_one">send</button>
-                        <!-- Customise the Thankyou Message People See when they submit the form: -->
-                        <div style="display:none;" class="thankyou_message">
-                            <h2> 확인 후 바로 연락 드리겠습니다.</h2>
-                        </div> 
+                    <form class="gform pure-form pure-form-stacked" method="POST" data-email="example@email.net"
+                    action="https://script.google.com/macros/s/AKfycbxBU5YU_iREh-u7QFKR4XLF2_VlieNXKynxheNucPOHuSmA0Wk/exec">
+                      <!-- change the form action to your script url -->
+                  
+                      <div class="form-elements">
+                        <fieldset class="pure-group">
+                          <label for="name">Name</label>
+                          <input id="name" name="name" placeholder="성함" required/>
+                        </fieldset>
+ 
+                        <fieldset class="pure-group">
+                            <label for="email"><em>Your</em> Email Address:</label>
+                            <input id="email" name="email" type="email" required value=""
+                            required placeholder="your.name@email.com"/>
+                        </fieldset>
+                  
+                        <fieldset class="pure-group">
+                          <label for="message">Message</label>
+                          <textarea id="message" name="message" rows="10"
+                          placeholder="내용을 남겨주세요 ;)" required></textarea>
+                        </fieldset>
+
+                        <button class="btn_one"><i class="fa fa-paper-plane"></i>&nbsp;Send</button>
+                      </div>
+                  
+                      <!-- Customise the Thankyou Message People See when they submit the form: -->
+                      <div class="thankyou_message" style="display:none;">
+                        <h2><em>Thanks</em> for contacting us! <br />
+                          We will get back to you soon!</h2>
+                          <p class="fsp">소중한 시간내주셔서 감사합니다. 빠른 시일 내에 답장드리겠습니다 :)</p>
+                      </div>
+                  
                     </form>
                 </p>
             </section>
@@ -163,7 +186,9 @@
     <script src="app.js"></script>
     
 <!-- END -->
+<!-- Submit the Form to Google Using "AJAX" -->
 <script data-cfasync="false" type="text/javascript"
 src="https://cdn.rawgit.com/dwyl/html-form-send-email-via-google-script-without-server/master/form-submission-handler.js"></script>
+<!-- END -->
 </body>
 </html>
