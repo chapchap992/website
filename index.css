@@ -514,3 +514,6 @@ body {
         line-height: 1.2;
     }
 }
+#honeypot {
+    display: none; /*일반적인 사용자에게 보이지 않도록 숨기세요*/
+  }
