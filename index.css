@@ -465,6 +465,29 @@ body {
     font-size: 0.8rem;
 }
 
+/* contact */
+.pure-group {
+    border: none;
+}
+.pure-group label {
+    display: block; 
+    font-size: 1.2rem; 
+    font-weight: 500; 
+    text-indent: -9999px;
+}
+.form-elementsWrap {
+    overflow: hidden;
+}
+.form-elementsWrap > .pure-w {
+    display: inline-block; 
+    vertical-align: middle; 
+    width: 46%; 
+}
+.form-elementsWrap > .pure-w input {
+    display: block; 
+    width: 100%;
+}
+
 @media (max-width: 800px){ 
     #about {
         display:none;
@@ -512,8 +535,11 @@ body {
     }
     .project-tree-dot ul li div p {
         line-height: 1.2;
+    } 
+    .form-elementsWrap > .pure-w {
+        display: block;  
+        width: 100%; 
     }
 }
-#honeypot {
-    display: none; /*일반적인 사용자에게 보이지 않도록 숨기세요*/
-  }
+
+  
